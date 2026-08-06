@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #fbf6ee;
+  --color-ink: #1b1623;
+  --color-coral: #ff6b5e;
+  --color-lime: #c8f04e;
+  --color-sun: #ffd84d;
+  --color-mint: #7ce7c1;
+  --color-pink: #ff9ad5;
+  --color-plum: #5b3fd4;
+
+  --font-sans: "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;
+  --font-display: "Trebuchet MS", "Segoe UI", system-ui, sans-serif;
+}
+
+body {
+  @apply bg-cream text-ink antialiased;
+  margin: 0;
+}
+
+#root {
+  min-height: 100svh;
+}
+
+@utility card-pop {
+  border: 3px solid var(--color-ink);
+  box-shadow: 6px 6px 0 0 var(--color-ink);
+}
+
+@utility card-pop-lg {
+  border: 4px solid var(--color-ink);
+  box-shadow: 10px 10px 0 0 var(--color-ink);
+}
+
+@utility animate-floaty {
+  animation: floaty 3.5s ease-in-out infinite;
+}
+
+@keyframes floaty {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
