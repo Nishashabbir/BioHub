@@ -31,7 +31,7 @@ export default function Hero() {
             <input
               aria-label="Choose your Bio Hub handle"
               placeholder="yourname"
-              className="min-w-0 flex-1 bg-transparent px-1 py-2 font-bold text-ink outline-none placeholder:text-plum/40"
+              className="min-w-0 flex-1 bg-transparent px-1 py-2 font-bold text-ink outline-none placeholder:text-black-100"
             />
             <button
               type="submit"
@@ -41,7 +41,7 @@ export default function Hero() {
             </button>
           </form>
 
-          <p className="mt-4 text-sm font-semibold text-pink-700">
+          <p className="mt-4 text-sm font-semibold text-black-100">
             Free forever · No card · Live in 2 minutes
           </p>
         </div>

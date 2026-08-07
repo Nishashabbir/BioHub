@@ -16,7 +16,7 @@ export default function Steps() {
             <div key={s.n} className="card-pop rounded-3xl bg-cream p-7">
               <span className="font-display text-5xl font-extrabold text-coral">{s.n}</span>
               <h3 className="mt-4 text-2xl font-extrabold tracking-tight text-ink">{s.t}</h3>
-              <p className="mt-2 font-medium text-pink-800">{s.d}</p>
+              <p className="mt-2 font-medium text-black-100">{s.d}</p>
             </div>
           ))}
         </div>
