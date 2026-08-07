@@ -12,7 +12,7 @@ export default function Marquee() {
   const row = [...items, ...items];
 
   return (
-    <div className="border-y-4 border-ink bg-plum py-4">
+    <div className="overflow-hidden border-y-4 border-ink bg-plum py-4">
       <div className="flex w-max animate-marquee gap-10 whitespace-nowrap">
         {row.map((item, i) => (
           <span

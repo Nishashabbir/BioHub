@@ -14,6 +14,11 @@
   --font-display: "Trebuchet MS", "Segoe UI", system-ui, sans-serif;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   @apply bg-cream text-ink antialiased;
   margin: 0;
@@ -45,4 +50,17 @@ body {
   50% {
     transform: translateY(-10px);
   }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@utility animate-marquee {
+  animation: marquee 22s linear infinite;
 }
